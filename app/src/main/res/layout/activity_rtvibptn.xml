@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiachenggu.sentirepro.rtvibptn">
+    <View
+        android:id="@+id/view7"
+        android:layout_width="585dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#33000000"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/lvRTV" />
+
+
+    <ImageButton
+        android:id="@+id/imbtnRTVhelp"
+        android:layout_width="62dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/help" />
+
+    <!--<Button-->
+    <!--android:id="@+id/btnLVfilter"-->
+    <!--android:layout_width="328dp"-->
+    <!--android:layout_height="43dp"-->
+    <!--android:layout_marginLeft="136dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:text="Pattern Emotion Filter"-->
+    <!--android:textAlignment="center"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/textViewptndtlRTV"
+        android:layout_width="602dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Pattern Details"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:background="#bcb59a"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvRTV"/>
+
+    <View
+        android:id="@+id/view5RTV"
+        android:layout_width="634dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#bcb59a"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnRTVsave" />
+
+    <TextView
+        android:id="@+id/textView9RTV"
+        android:layout_width="136dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Pattern Name : "
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewptndtlRTV" />
+
+    <TextView
+        android:id="@+id/textView11RTV"
+        android:layout_width="149dp"
+        android:layout_height="27dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Pattern Emotion : "
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@+id/tvbtnRTVptnemot"
+        app:layout_constraintTop_toBottomOf="@+id/textViewptndtlRTV" />
+
+    <TextView
+        android:id="@+id/tvbtnRTVptnemot"
+        android:layout_width="124dp"
+        android:layout_height="29dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewptndtlRTV" />
+
+    <EditText
+        android:id="@+id/etRTVptnname"
+        android:layout_width="122dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#6a6a6a"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/textView9RTV"
+        app:layout_constraintTop_toBottomOf="@+id/textViewptndtlRTV" />
+
+    <TextView
+        android:id="@+id/textViewRTV"
+        android:layout_width="73dp"
+        android:layout_height="67dp"
+        android:text="Pattern Code : "
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/etRTVptnname" />
+
+    <TextView
+        android:id="@+id/tvbtnRTVptncode"
+        android:layout_width="515dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintLeft_toRightOf="@+id/textViewRTV"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/etRTVptnname" />
+
+    <Button
+        android:id="@+id/btnRTVdel"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="0dp"
+        android:text="Delete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRTV" />
+
+    <Button
+        android:id="@+id/btnRTVsave"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:text="Save"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRTV"
+        app:layout_constraintLeft_toRightOf="@+id/btnRTVsetas"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.536" />
+
+    <TextView
+        android:id="@+id/tvbtnRTVclear"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:background="#063186"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Clear"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/view5RTV" />
+
+    <TextView
+        android:id="@+id/tvbtnRTVnew"
+        android:layout_width="441dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#4edb71"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Create New"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/tvbtnRTVclear"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5RTV"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="160dp" />
+
+    <ImageView
+        android:id="@+id/imbtnRTVrefresh"
+        android:layout_width="58dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_sync" />
+
+    <Button
+        android:id="@+id/btnRTVsetas"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="0dp"
+        android:text="Set as"
+        app:layout_constraintLeft_toRightOf="@+id/btnRTVdel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRTV" />
+
+    <ListView
+        android:id="@+id/lvRTV"
+        android:layout_width="570dp"
+        android:layout_height="496dp"
+        android:layout_marginBottom="251dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

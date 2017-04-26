@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvptnname"
+        android:layout_width="107dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/tvptnemot"
+        android:layout_width="107dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/ivplay"
+        android:layout_width="81dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="67dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="22dp"
+        android:background="#3f51b5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/tvptntimes"
+        android:layout_width="92dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <View
+        android:layout_width="556dp"
+        android:layout_height="2dp"
+        android:background="#33000000"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.431"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvptnemot" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="2dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginTop="88dp"
+        android:background="#33000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="585dp"
+        android:layout_height="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#000000"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="173dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="124dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="15dp"
+        android:text="Pattern Name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="152dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="15dp"
+        android:text="Pattern Emotion"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:text="Testing times"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+    <TextView
+        android:id="@+id/tvscorehap"
+        android:layout_width="24dp"
+        android:layout_height="19dp"
+        android:textColor="#070707"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintRight_toLeftOf="@+id/tvscoresad"
+        android:layout_marginRight="17dp" />
+
+    <TextView
+        android:id="@+id/tvscoresad"
+        android:layout_width="24dp"
+        android:layout_height="19dp"
+        android:textColor="#070707"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintRight_toLeftOf="@+id/tvscoreang"
+        android:layout_marginRight="13dp" />
+
+    <TextView
+        android:id="@+id/tvscoreang"
+        android:layout_width="24dp"
+        android:layout_height="19dp"
+        android:textColor="#070707"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintRight_toLeftOf="@+id/tvscorecon"
+        android:layout_marginRight="29dp" />
+
+    <TextView
+        android:id="@+id/tvscorecon"
+        android:layout_width="24dp"
+        android:layout_height="19dp"
+        android:textColor="#070707"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintRight_toLeftOf="@+id/tvscoresup"
+        android:layout_marginRight="38dp" />
+
+    <TextView
+        android:id="@+id/tvscoresup"
+        android:layout_width="24dp"
+        android:layout_height="19dp"
+        android:textColor="#070707"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintRight_toLeftOf="@+id/tvscoredis"
+        android:layout_marginRight="36dp" />
+
+    <TextView
+        android:id="@+id/tvscoredis"
+        android:layout_width="24dp"
+        android:layout_height="19dp"
+        android:textColor="#070707"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintRight_toLeftOf="@+id/tvscorefea"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/tvscorefea"
+        android:layout_width="24dp"
+        android:layout_height="19dp"
+        android:textColor="#070707"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintRight_toLeftOf="@+id/tvscorenod"
+        android:layout_marginRight="18dp" />
+
+    <TextView
+        android:id="@+id/tvscorenod"
+        android:layout_width="24dp"
+        android:layout_height="19dp"
+        android:textColor="#070707"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintRight_toLeftOf="@+id/tvscoresha"
+        android:layout_marginRight="17dp" />
+
+    <TextView
+        android:id="@+id/tvscoresha"
+        android:layout_width="24dp"
+        android:layout_height="19dp"
+        android:textColor="#070707"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        android:layout_marginRight="25dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="37dp"
+        android:layout_height="19dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="15dp"
+        android:text="Sad"
+        app:layout_constraintRight_toLeftOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="37dp"
+        android:layout_height="19dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="15dp"
+        android:text="Angry"
+        app:layout_constraintRight_toLeftOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="67dp"
+        android:layout_height="17dp"
+        android:layout_marginRight="-9dp"
+        android:layout_marginTop="15dp"
+        android:text="Contempt"
+        app:layout_constraintRight_toLeftOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="51dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="15dp"
+        android:text="Suprise"
+        app:layout_constraintRight_toLeftOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="54dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="15dp"
+        android:text="Disgust"
+        app:layout_constraintRight_toLeftOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="37dp"
+        android:layout_height="19dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="15dp"
+        android:text="Fear"
+        app:layout_constraintRight_toLeftOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="37dp"
+        android:layout_height="19dp"
+        android:layout_marginRight="-3dp"
+        android:layout_marginTop="15dp"
+        android:text="Nod"
+        app:layout_constraintRight_toLeftOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="42dp"
+        android:layout_height="19dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="14dp"
+        android:text="Shake"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="43dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="15dp"
+        android:text="happy"
+        app:layout_constraintRight_toLeftOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+</android.support.constraint.ConstraintLayout>

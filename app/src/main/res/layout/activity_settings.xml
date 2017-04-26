@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiachenggu.sentirepro.Settings">
+
+    <Button
+        android:id="@+id/btnsettingini"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#04b822"
+        android:text="initialize"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ListView
+        android:id="@+id/lvsettings"
+        android:layout_width="591dp"
+        android:layout_height="592dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnclearscore"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#000ed0"
+        android:text="Clear Score"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btnsettingup"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="8dp"
+        android:background="#3e3e3e"
+        android:text="upload"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnsettingini"
+        app:layout_constraintRight_toLeftOf="@+id/btnclearscore" />
+
+    <TextView
+        android:id="@+id/tvsettings"
+        android:layout_width="579dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="12dp"
+        android:background="#cdcdcd"
+        android:text="Pattern Code :"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvsettings" />
+
+    <Button
+        android:id="@+id/btndemo"
+        android:layout_width="216dp"
+        android:layout_height="47dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="13dp"
+        android:background="#ead928"
+        android:text="Demo"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvsettings" />
+
+</android.support.constraint.ConstraintLayout>

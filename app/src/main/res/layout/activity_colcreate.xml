@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiachenggu.sentirepro.colcreate">
+
+    <org.eazegraph.lib.charts.PieChart xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/piechartCC"
+        android:layout_width="590dp"
+        android:layout_height="436dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="112dp"
+        android:padding="8dp"
+        app:egLegendTextSize="18sp"
+        app:egUsePieRotation="true"
+        app:egValueTextSize="36sp"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imbtnCCplay"
+        android:layout_width="105dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="-57dp"
+        android:background="#3f51b5"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCCptncode"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/imbtnCChelp"
+        android:layout_width="62dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/help" />
+
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="262dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="565dp"
+        android:text="Current Pattern Code : "
+        android:textAlignment="viewStart"
+        android:textColor="#010101"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/etCCptncode"
+        android:layout_width="591dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#1d1d1d"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+    <TextView
+        android:id="@+id/tvCCemot"
+        android:layout_width="380dp"
+        android:layout_height="58dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:background="#b9babb"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Click to select the emotion for this pattern"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCCptncode" />
+
+    <Button
+        android:id="@+id/btnCCadd"
+        android:layout_width="172dp"
+        android:layout_height="43dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="376dp"
+        android:text="Add colors"
+        app:layout_constraintRight_toRightOf="@+id/piechartCC"
+        app:layout_constraintTop_toTopOf="@+id/piechartCC" />
+
+    <Button
+        android:id="@+id/btnCCsave"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="#076f23"
+        android:text="save"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnCCclear"
+        android:layout_width="351dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginRight="-1dp"
+        android:background="#6fc6d5"
+        android:text="clear"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/btnCCsave"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

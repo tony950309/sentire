@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiachenggu.sentirepro.Demo">
+
+    <Button
+        android:id="@+id/btndemohap"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="66dp"
+        android:text="happy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="132dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <Button
+        android:id="@+id/btndemosad"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="-15dp"
+        android:text="sad"
+        app:layout_constraintLeft_toRightOf="@+id/btndemohap"
+        app:layout_constraintTop_toTopOf="@+id/btndemohap" />
+
+    <Button
+        android:id="@+id/btndemoang"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="-15dp"
+        android:text="angry"
+        app:layout_constraintLeft_toRightOf="@+id/btndemosad"
+        app:layout_constraintTop_toTopOf="@+id/btndemohap" />
+
+    <Button
+        android:id="@+id/btndemocon"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:text="contempt"
+        app:layout_constraintLeft_toLeftOf="@+id/btndemohap"
+        app:layout_constraintTop_toBottomOf="@+id/btndemohap" />
+
+    <Button
+        android:id="@+id/btndemosup"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:text="suprised"
+        app:layout_constraintLeft_toRightOf="@+id/btndemocon"
+        app:layout_constraintTop_toBottomOf="@+id/btndemosad" />
+
+    <Button
+        android:id="@+id/btndemodis"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:text="disgust"
+        app:layout_constraintLeft_toRightOf="@+id/btndemosup"
+        app:layout_constraintTop_toBottomOf="@+id/btndemoang" />
+
+    <Button
+        android:id="@+id/btndemonod"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:text="nod"
+        app:layout_constraintLeft_toLeftOf="@+id/btndemohap"
+        app:layout_constraintTop_toBottomOf="@+id/btndemocon" />
+
+    <Button
+        android:id="@+id/btndemofea"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:text="fear"
+        app:layout_constraintLeft_toRightOf="@+id/btndemonod"
+        app:layout_constraintTop_toBottomOf="@+id/btndemosup" />
+
+    <Button
+        android:id="@+id/btndemosha"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:text="shake"
+        app:layout_constraintLeft_toRightOf="@+id/btndemofea"
+        app:layout_constraintTop_toBottomOf="@+id/btndemodis" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="442dp"
+        android:layout_height="77dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="85dp"
+        android:text="Press the button to send emotion data to the wristband. (Time intrtval between emotions should longer than 5 secnds)"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

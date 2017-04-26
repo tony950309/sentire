@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimaryDark">#222831</color>
+    <!--<color name="colorAccent">#00ADB5</color>-->
+    <color name="colorAccent1">#2185d5</color>
+
+
+    <color name="primaryText">#ffffff</color>
+    <color name="secondaryText">#f3f3f3</color>
+
+    <color name="card_color1">#3498db</color>
+    <!--<color name="card_color2">#34495E</color>-->
+    <color name="card_color2">#3a4750</color>
+    <color name="card_color3">#F1C40F</color>
+    <!--<color name="card_color4">#353535</color>-->
+    <color name="card_color4">#303841</color>
+    <color name="card_color5">#FF5722</color>
+    <color name="card_color6">#66717e</color>
+
+
+    <color name="colorBackground1">#C1CAD6</color>
+    <color name="colorBackground2">#fcfcfc</color>
+    <color name="colorBackground3">#66717e</color>
+    <color name="colorBackground4">#eef0f2</color>
+
+    <color name="colorComplete">#63d13e</color>
+    <color name="lineColor">#FE6DA8</color>
+
+    <color name="colorJoy">#f7ae35</color>
+    <color name="colorFear">#cedd47</color>
+    <color name="colorSurprise">#72c391</color>
+    <color name="colorSadness">#66c4eb</color>
+    <color name="colorDisgust">#ab5ca1</color>
+    <color name="colorAnger">#dd3386</color>
+</resources>

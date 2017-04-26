@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiachenggu.sentirepro.libvibcreate">
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="585dp"
+        android:layout_height="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#33000000"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/gvLVC" />
+
+    <ImageView
+        android:id="@+id/imbtnLVCplay"
+        android:layout_width="105dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginStart="22dp"
+        android:background="#3f51b5"
+        app:srcCompat="@android:drawable/ic_media_play"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/etCCptncode"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imbtnLVChelp"
+        android:layout_width="62dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/help" />
+
+    <TextView
+        android:id="@+id/tvLVCeffect"
+        android:layout_width="537dp"
+        android:layout_height="63dp"
+        android:background="#8e8e8e"
+        android:gravity="center"
+        android:text="Insert Effect1, Effect2..."
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="262dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Current Pattern Code : "
+        android:textAlignment="viewStart"
+        android:textColor="#010101"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gvLVC" />
+
+    <EditText
+        android:id="@+id/etCCptncode"
+        android:layout_width="591dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#1d1d1d"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+    <Button
+        android:id="@+id/btnLVCsaveas"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="-11dp"
+        android:layout_marginLeft="0dp"
+        android:background="#6ba408"
+        android:text="Save as"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnLVCsave"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="#208abe"
+        android:text="save"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnLVCsaveas" />
+
+    <Button
+        android:id="@+id/btnLVCclear"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#8e8e8e"
+        android:text="clear"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintLeft_toRightOf="@+id/btnLVCsave"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="397dp" />
+
+    <TextView
+        android:id="@+id/tvLVCemot"
+        android:layout_width="380dp"
+        android:layout_height="58dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:background="#b9babb"
+        android:gravity="center"
+        android:text="Click to select the emotion for this pattern"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCCptncode" />
+
+    <GridView
+        android:id="@+id/gvLVC"
+        android:layout_width="597dp"
+        android:layout_height="516dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="-114dp"
+        android:columnWidth="80dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLVCeffect" />
+
+</android.support.constraint.ConstraintLayout>

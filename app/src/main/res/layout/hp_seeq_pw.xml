@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#92c5e5">
+
+    <TextView
+        android:id="@+id/tvdialogmessage"
+        android:layout_width="416dp"
+        android:layout_height="114dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:text="Questionnaire data is classified and is only for developer, type in the password to get access to the data"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <Button
+        android:id="@+id/btndialogconf"
+        android:layout_width="182dp"
+        android:layout_height="58dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="42dp"
+        android:text="Confirm"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etdialogpw" />
+
+    <Button
+        android:id="@+id/btndialogcanc"
+        android:layout_width="182dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="42dp"
+        android:text="Cancel"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btndialogconf"
+        app:layout_constraintTop_toBottomOf="@+id/etdialogpw" />
+
+    <EditText
+        android:id="@+id/etdialogpw"
+        android:layout_width="210dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="29dp"
+        android:background="#fcfbfb"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="password"
+        android:inputType="numberPassword"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdialogmessage" />
+
+
+</android.support.constraint.ConstraintLayout>

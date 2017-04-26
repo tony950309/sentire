@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiachenggu.sentirepro.colptn">
+    <View
+        android:id="@+id/view7c"
+        android:layout_width="585dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#33000000"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/lvC" />
+
+
+    <ImageButton
+        android:id="@+id/imbtnChelp"
+        android:layout_width="62dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/help" />
+
+    <!--<Button-->
+    <!--android:id="@+id/btnLVfilter"-->
+    <!--android:layout_width="328dp"-->
+    <!--android:layout_height="43dp"-->
+    <!--android:layout_marginLeft="136dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:text="Pattern Emotion Filter"-->
+    <!--android:textAlignment="center"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/textViewptndtlc"
+        android:layout_width="602dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Pattern Details"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:background="#bcb59a"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvC"/>
+
+    <View
+        android:id="@+id/view5c"
+        android:layout_width="634dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#bcb59a"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnCsave" />
+
+    <TextView
+        android:id="@+id/textView9c"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Pattern Name : "
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewptndtlc" />
+
+    <TextView
+        android:id="@+id/textView11c"
+        android:layout_width="146dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Pattern Emotion : "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@+id/tvbtnCptnemot"
+        app:layout_constraintTop_toBottomOf="@+id/textViewptndtlc" />
+
+    <TextView
+        android:id="@+id/tvbtnCptnemot"
+        android:layout_width="145dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewptndtlc"
+        tools:text="Click to set emotion" />
+
+    <EditText
+        android:id="@+id/etCptnname"
+        android:layout_width="122dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#6a6a6a"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/textView9c"
+        app:layout_constraintTop_toBottomOf="@+id/textViewptndtlc" />
+
+    <TextView
+        android:id="@+id/textViewc"
+        android:layout_width="134dp"
+        android:layout_height="28dp"
+        android:text="Pattern Code : "
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="56dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewptndtlc" />
+
+    <TextView
+        android:id="@+id/tvbtnCptncode"
+        android:layout_width="426dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/textViewc"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewc"
+        android:layout_marginTop="-17dp" />
+
+    <Button
+        android:id="@+id/btnCdel"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="7dp"
+        android:text="Delete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewc" />
+
+    <Button
+        android:id="@+id/btnCsave"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:text="Save"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewc"
+        android:layout_marginRight="63dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tvbtnCclear"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="0dp"
+        android:background="#063186"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Clear"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/view5c" />
+
+    <TextView
+        android:id="@+id/tvbtnCnew"
+        android:layout_width="441dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#4edb71"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Create New"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/tvbtnCclear"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5c"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="160dp" />
+
+    <ImageView
+        android:id="@+id/imbtnCrefresh"
+        android:layout_width="58dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_sync" />
+
+    <Button
+        android:id="@+id/btnCsetas"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="7dp"
+        android:text="Set as"
+        app:layout_constraintLeft_toRightOf="@+id/btnCdel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewc"
+        app:layout_constraintRight_toLeftOf="@+id/btnCsave"
+        android:layout_marginRight="8dp" />
+
+    <ListView
+        android:id="@+id/lvC"
+        android:layout_width="570dp"
+        android:layout_height="496dp"
+        android:layout_marginBottom="251dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

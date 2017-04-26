@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiachenggu.sentirepro.ques_vib">
+
+    <ImageView
+        android:id="@+id/ivqplay"
+        android:layout_width="81dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="72dp"
+        android:background="#3f51b5"
+        app:layout_constraintTop_toBottomOf="@+id/tvqintro"
+        app:srcCompat="@android:drawable/ic_media_play"
+        android:layout_marginRight="86dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tvqintro"
+        android:layout_width="574dp"
+        android:layout_height="178dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="27dp"
+        android:background="#aec0d2"
+        android:text="a ha ha ha ha "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.571" />
+
+    <TextView
+        android:id="@+id/tvqptnnumb"
+        android:layout_width="342dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="72dp"
+        android:background="#bdffda"
+        android:gravity="center_vertical"
+        android:text="Vibration Pattern  #"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvqintro" />
+
+    <Button
+        android:id="@+id/btnqhap"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="85dp"
+        android:text="happy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvqptnnumb" />
+
+    <Button
+        android:id="@+id/btnqsad"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="-15dp"
+        android:text="sad"
+        app:layout_constraintLeft_toRightOf="@+id/btnqhap"
+        app:layout_constraintTop_toTopOf="@+id/btnqhap" />
+
+    <Button
+        android:id="@+id/btnqang"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="-15dp"
+        android:text="angry"
+        app:layout_constraintLeft_toRightOf="@+id/btnqsad"
+        app:layout_constraintTop_toTopOf="@+id/btnqhap" />
+
+    <Button
+        android:id="@+id/btnqcon"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:text="contempt"
+        app:layout_constraintLeft_toLeftOf="@+id/btnqhap"
+        app:layout_constraintTop_toBottomOf="@+id/btnqhap" />
+
+    <Button
+        android:id="@+id/btnqsup"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:text="suprised"
+        app:layout_constraintLeft_toRightOf="@+id/btnqcon"
+        app:layout_constraintTop_toBottomOf="@+id/btnqsad" />
+
+    <Button
+        android:id="@+id/btnqdis"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:text="disgust"
+        app:layout_constraintLeft_toRightOf="@+id/btnqsup"
+        app:layout_constraintTop_toBottomOf="@+id/btnqang" />
+
+    <Button
+        android:id="@+id/btnqnod"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:text="nod"
+        app:layout_constraintLeft_toLeftOf="@+id/btnqhap"
+        app:layout_constraintTop_toBottomOf="@+id/btnqcon" />
+
+    <Button
+        android:id="@+id/btnqfea"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:text="fear"
+        app:layout_constraintLeft_toRightOf="@+id/btnqnod"
+        app:layout_constraintTop_toBottomOf="@+id/btnqsup" />
+
+    <Button
+        android:id="@+id/btnqsha"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:text="shake"
+        app:layout_constraintLeft_toRightOf="@+id/btnqfea"
+        app:layout_constraintTop_toBottomOf="@+id/btnqdis" />
+
+    <Button
+        android:id="@+id/btnqnext"
+        android:layout_width="242dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_marginRight="-1dp"
+        android:background="#12c937"
+        android:text="Section two (optional)"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btnqsave"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:background="#0831c6"
+        android:text="save questionnaire and exit"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
